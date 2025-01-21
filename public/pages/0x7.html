@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 8</title>
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="../css/0x7.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <a id="prev-link" href="../pages/0x6.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>prev</span>
+                </a>
+                <a id="next-link" href="../pages/0x8.html">
+                    <span>next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </nav>
+            <h2 class="title">Ex08: <span>Transitions</span>, move on <span>active</span>, change in shape and color
+            </h2>
+        </header>
+
+        <main>
+            <div class="container">
+                <h3>Path to Follow</h3>
+                <video autoplay loop name="media">
+                    <source src="../videos/0x7.webm" type="video/webm">
+                </video>
+                <h4>Default State:</h4>
+                <ol>
+                    <li><span class="property">size</span>: <span class="base">150</span><span class="unit">px</span> by
+                        <span class="base">50</span><span class="unit">px</span>.
+                    </li>
+                    <li><span class="property">background color</span>: <span class="lightblue">lightblue</span>.
+                    </li>
+                    <li><span class="property">transition</span>: <span class="base">3</span><span
+                            class="unit">s</span>, starts slowly, with increasing of speed until end.
+                    </li>
+                </ol>
+                <h4>Active State:</h4>
+                <ol>
+                    <li><span class="property">border radius</span>: <span class="base">50</span><span
+                            class="unit">%</span>.</li>
+                    <li><span class="property">width</span>: <span class="base">50</span><span class="unit">px</span>.
+                    </li>
+                    <li><span class="property">background color</span>: <span class="purple">purple</span>.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="container">
+                <h3>Trail Markings</h3>
+                <div id="box"></div>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

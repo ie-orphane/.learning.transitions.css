@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+
+    section {
+        width: 62.5%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 3.25rem;
+
+        nav {
+            display: flex;
+            margin-bottom: 1rem;
+
+            a {
+                display: flex;
+                color: black;
+                align-items: center;
+                justify-content: center;
+                gap: 0.25rem;
+                text-decoration: none;
+                border-bottom: 1px solid black;
+                font-size: medium;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+
+                &#next-link {
+                    margin-left: auto;
+                }
+
+                &#prev-link {
+                    margin-right: auto;
+                }
+            }
+        }
+
+        .title {
+            margin-top: 1rem;
+            text-align: center;
+
+            span {
+                background-color: #FFDD57;
+                color: #2D2D2D;
+                padding: 0.125rem 0.5rem;
+                border-radius: 0.25rem;
+                font-weight: bold;
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2.25rem;
+            width: fit-content;
+            margin: 0 auto;
+            width: 87.5%;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+
+                h3 {
+                    &~* {
+                        margin-left: 2rem;
+                    }
+
+                    &~:is(ul, ol) {
+                        margin-left: 2.75rem;
+                    }
+                }
+
+                h4 {
+                    font-weight: 500;
+
+                    &+* {
+                        margin-left: calc(2rem * 2);
+                    }
+
+                    &+:is(ul, ol) {
+                        margin-left: calc(2.75rem * 2);
+                    }
+                }
+
+                video {
+                    width: fit-content;
+                    max-width: 100%;
+                }
+            }
+
+            .keyword-proprety {
+                color: #3A7DFF;
+            }
+
+            .number-unit {
+                color: #F5A623;
+            }
+
+            ol,
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            li a[href="../pages/hints.html"] {
+                text-decoration: none;
+                color: #2D2D2D;
+            }
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                background-color: #5779FF;
+                color: white;
+                padding: 0.75rem 1.25rem;
+                font-weight: 600;
+                border-radius: 0.25rem;
+
+                &:hover {
+                    background-color: #4f65be;
+                }
+            }
+        }
+    }
+}
+
+.lightindigo {
+    color: #5779FF;
+}
+
+.black {
+    color: black;
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.grey {
+    color: grey;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.transparent {
+    color: transparent;
+}
+
+code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    border: 2px #1E1E2E;
+    width: fit-content;
+    min-width: 32.4.5%;
+    color: #2D2D2D;
+}
+
+.selector {
+    color: #D73A49;
+}
+
+.base {
+    color: #4e4e4e;
+}
+
+.property {
+    color: #005CC5;
+}
+
+.value {
+    color: #22863A;
+}
+
+.unit {
+    color: #E36209;
+}
+
+.pseudo-class:hover {
+    color: #6F42C1;
+}
+
+.comment {
+    color: #6A737D;
+    font-style: italic;
+}
+
+.index {
+    color: #6A737D;
+}
+
+.braces {
+    color: #DCA106;
+}
