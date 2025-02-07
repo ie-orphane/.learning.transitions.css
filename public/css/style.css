@@ -187,50 +187,71 @@ body {
     color: transparent;
 }
 
-code {
-    font-family: 'Fira Code', 'Consolas', monospace;
+code.css {
     font-size: 14px;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    border: 2px #1E1E2E;
     width: fit-content;
-    min-width: 32.4.5%;
-    color: #2D2D2D;
-}
+    display: flex;
+    flex-direction: column;
+    display: block;
+    border: 1px solid #e1e4e8;
+    color: #333333;
+    border-radius: .25rem;
+    width: fit-content;
+    min-width: 50%;
 
-.selector {
-    color: #D73A49;
-}
+    header {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .75rem 1.25rem;
+        border-bottom: 1px solid #e1e4e8;
 
-.base {
-    color: #4e4e4e;
-}
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: #333333;
+        }
 
-.property {
-    color: #005CC5;
-}
+        h4 {
+            font-weight: normal;
+        }
+    }
 
-.value {
-    color: #22863A;
-}
+    main {
+        padding: 1.25rem 1.25rem;
+        display: inline-block;
+        width: 100%;
+        background-color: rgba(255, 221, 87, .03125);
+    }
 
-.unit {
-    color: #E36209;
-}
+    .selector {
+        color: #22863a;
+    }
 
-.pseudo-class:hover {
-    color: #6F42C1;
-}
+    .value {
+        color: #005cc5;
+    }
 
-.comment {
-    color: #6A737D;
-    font-style: italic;
-}
+    .braces {
+        color: #DCA106;
+    }
 
-.index {
-    color: #6A737D;
-}
+    .comment {
+        color: #6a737d;
+        font-style: italic;
+    }
 
-.braces {
-    color: #DCA106;
+    .string {
+        color: #032f62;
+    }
+
+    .at-rule {
+        color: #6f42c1;
+    }
+
+    .function,
+    .important,
+    .property {
+        color: #d73a49;
+    }
 }
