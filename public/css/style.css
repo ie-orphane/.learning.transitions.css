@@ -255,3 +255,42 @@ code.css {
         color: #d73a49;
     }
 }
+
+*[data-highlight="css"] {
+    .selector {
+        color: #D73A49;
+    }
+    
+    .base {
+        color: #4e4e4e;
+    }
+    
+    .property {
+        color: #005CC5;
+    }
+    
+    .value {
+        color: #22863A;
+    }
+    
+    .unit {
+        color: #E36209;
+    }
+    
+    .pseudo-class:hover {
+        color: #6F42C1;
+    }
+    
+    .comment {
+        color: #6A737D;
+        font-style: italic;
+    }
+    
+    .index {
+        color: #6A737D;
+    }
+    
+    .braces {
+        color: #DCA106;
+    }
+}
